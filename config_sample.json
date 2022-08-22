@@ -1,0 +1,14 @@
+{
+    "api_token": "---",
+    "budget_id": "---",
+    "card_map": {
+        "----": {
+            "account_id": "---",
+            "credit_card": true
+        },
+        "---": {
+            "account_id": "---",
+            "credit_card": false
+        }
+    }
+}
