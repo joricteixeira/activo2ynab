@@ -43,7 +43,7 @@ def parse_activo(file_name):
     response = requests.post(f"https://api.youneedabudget.com/v1/budgets/{config['budget_id']}/transactions", headers={'Authorization': f"Bearer {config['api_token']}"}, json=request_body)
 
     print("Status Code", response.status_code)
-    pprint("Response Content", response.content)
+    print("Response Content", response.content)
 
 
 def get_config():
@@ -56,4 +56,4 @@ if __name__ == "__main__":
     if len(sys.argv) <= 1:
         print("Please provide the .xlsx file name")
     else:
-        parse_activo(sys.argv[1], config)
+        parse_activo(sys.argv[1])
